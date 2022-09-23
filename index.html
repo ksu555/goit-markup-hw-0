@@ -42,7 +42,13 @@
 <section class="hero">
     <div class= "container">
     <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-    <button type="button" class="btn auto">Замовити послугу</button>
+    <div><button data-modal-open type="button" class="btn auto">Замовити послугу</button>
+    <div data-modal class="backdrop is-hidden" >
+        <div class="modal">
+            <button data-modal-close type="button" class="modal-close"><svg width="11" height="11"><use href="./images/icons.svg#icon-Vector"></use></svg></button>
+        </div>
+    </div>
+    </div>
     </div>
 </section>
 
@@ -76,9 +82,12 @@
     <div class="container">
     <h2 class="main-title">Чим ми займаємося</h2>
     <ul class="img-list">
-        <li><img src="./images/box1.jpg" alt="Programming" width="370" height="294" class="img block"></li>
-        <li><img src="./images/box2.jpg" alt="Testing" width="370" height="294" class="img block"></li>
-        <li><img src="./images/box3.jpg" alt="Design" width="370" height="294" class="img block"></li>
+        <li class="img-cover"><img src="./images/box1.jpg" alt="Programming" width="370" height="294" class="img block">
+        <p class="img-text">Десктопні додатки</p></li>
+        <li class="img-cover"><img src="./images/box2.jpg" alt="Testing" width="370" height="294" class="img block">
+        <p class="img-text">Мобільні додатки</p></li>
+        <li class="img-cover"><img src="./images/box3.jpg" alt="Design" width="370" height="294" class="img block">
+        <p class="img-text">Дизайнерські рішення</p></li>
     </ul>
     </div>
 </section>
@@ -249,4 +258,5 @@
         </div>
         </div>
     </footer>
+    <script src="./modal.js"></script>
 </body>
